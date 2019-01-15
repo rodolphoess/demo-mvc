@@ -21,8 +21,9 @@
 		<java.version>1.8</java.version>
 	</properties>
 	
-	<!-- Dependências informadas na criação do projeto, a biblioteca de template,
-	o container web, e o devtools para cuidar da parte de servidor da aplicação. -->
+	<!-- Dependências informadas na criação do projeto, a biblioteca de template/front que é o 
+	thymeleaf, o container web que diz respeito ao Spring MVC, e o devtools para cuidar 
+	da parte de servidor da aplicação. -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,7 +47,7 @@
 	</dependencies>
 	
 	<!-- O gerenciador da aplicação, que cuidará da parte do build para ligar todas as 
-	dependências em uma árvore. Nesse caso, o MAVEN. -->
+	dependências em uma árvore a partir de uma classe principal/main. Nesse caso, o MAVEN. -->
 	<build>
 		<plugins>
 			<plugin>
