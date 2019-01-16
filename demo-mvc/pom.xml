@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -7,9 +8,9 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.1.RELEASE</version>
-		<relativePath/> 
+		<relativePath />
 	</parent>
-	
+
 	<!-- Informações fornecidas na criação do projeto. -->
 	<groupId>com.mballem.curso.boot</groupId>
 	<artifactId>demo-mvc</artifactId>
@@ -20,15 +21,16 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	
-	<!-- Dependências informadas na criação do projeto, a biblioteca de template/front que é o 
-	thymeleaf, o container web que diz respeito ao Spring MVC, e o devtools para cuidar 
-	da parte de servidor da aplicação. -->
+
+	<!-- Dependências informadas na criação do projeto, a biblioteca de template/front 
+		que é o thymeleaf, o container web que diz respeito ao Spring MVC, e o devtools 
+		para cuidar da parte de servidor da aplicação. -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,15 +41,51 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Responsável por vincular a URL colocada na página com as dependências
+		WebJars do projeto. A partir desse artefato é possível importar os demais arquivos
+		WebJars. Nas versões 2.x.x utiliza-se o webjars-locator-core, enquanto que nas versões
+		1.x.x utiliza-se o webjars-locator. -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+
+		<!-- Biblioteca que possui ícones para serem adicionados nas páginas. Link: https://useiconic.com/ -->
+		<dependency>
+			<groupId>org.webjars.bower</groupId>
+			<artifactId>open-iconic</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.3.1-1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars.bower</groupId>
+			<artifactId>jquery-mask-plugin</artifactId>
+			<version>1.14.15</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-	<!-- O gerenciador da aplicação, que cuidará da parte do build para ligar todas as 
-	dependências em uma árvore a partir de uma classe principal/main. Nesse caso, o MAVEN. -->
+
+	<!-- O gerenciador da aplicação, que cuidará da parte do build para ligar 
+		todas as dependências em uma árvore a partir de uma classe principal/main. 
+		Nesse caso, o MAVEN. -->
 	<build>
 		<plugins>
 			<plugin>
