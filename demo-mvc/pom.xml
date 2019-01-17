@@ -42,8 +42,8 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Responsável por vincular a URL colocada na página com as dependências
-		WebJars do projeto. A partir desse artefato é possível importar os demais arquivos
+		<!-- Responsável por relacionar as dependências de webjars (Bootstrap, jQuery, …) com as urls e incluí-das 
+		nas páginas html. A partir desse artefato é possível importar os demais arquivos
 		WebJars. Nas versões 2.x.x utiliza-se o webjars-locator-core, enquanto que nas versões
 		1.x.x utiliza-se o webjars-locator. -->
 		<dependency>
