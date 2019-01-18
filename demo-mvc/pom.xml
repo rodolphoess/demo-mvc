@@ -35,11 +35,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- Starter do Spring Framework para trabalhar com o framework ORM JPA para
+		mapeamento das entidades com o banco. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<!-- Responsável por relacionar as dependências de webjars (Bootstrap, jQuery, …) com as urls e incluí-das 
